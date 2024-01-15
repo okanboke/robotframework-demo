@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20240111 02:56:09.229" rpa="false" schemaversion="4">
-<suite id="s1" name="Alert" source="C:\Users\Okan\PycharmProjects\deneme\RobotFramework\Automation\alert.robot">
-<test id="s1-t1" name="alertwindow" line="5">
+<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20240116 01:07:23.094" rpa="false" schemaversion="4">
+<suite id="s1" name="Draganddrop" source="C:\Users\Okan\PycharmProjects\deneme\RobotFramework\Automation\draganddrop.robot">
+<test id="s1-t1" name="draganddrop" line="5">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://testautomationpractice.blogspot.com/</arg>
-<arg>Edge</arg>
+<arg>edge</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240111 02:56:09.378" level="INFO">Opening browser 'Edge' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
-<status status="PASS" starttime="20240111 02:56:09.378" endtime="20240111 02:56:14.391"/>
+<msg timestamp="20240116 01:07:23.285" level="INFO">Opening browser 'edge' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<status status="PASS" starttime="20240116 01:07:23.285" endtime="20240116 01:07:29.375"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20240111 02:56:14.392" endtime="20240111 02:56:14.521"/>
+<status status="PASS" starttime="20240116 01:07:29.375" endtime="20240116 01:07:29.491"/>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath://button[contains(text(),'Confirm Box')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240111 02:56:14.522" level="INFO">Clicking button 'xpath://button[contains(text(),'Confirm Box')]'.</msg>
-<status status="PASS" starttime="20240111 02:56:14.522" endtime="20240111 02:56:14.601"/>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240116 01:07:29.492" level="INFO">Executing JavaScript:
+window.scrollTo(0,500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20240116 01:07:29.492" endtime="20240116 01:07:29.499"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240111 02:56:16.604" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20240111 02:56:14.601" endtime="20240111 02:56:16.604"/>
-</kw>
-<kw name="Handle Alert" library="SeleniumLibrary">
-<arg>accept</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<msg timestamp="20240111 02:56:16.604" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20240111 02:56:16.604" endtime="20240111 02:56:16.608"/>
+<kw name="Drag And Drop" library="SeleniumLibrary">
+<arg>xpath://div[@id='draggable']</arg>
+<arg>xpath://div[@id='droppable']</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" starttime="20240116 01:07:29.499" endtime="20240116 01:07:30.060"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240111 02:56:18.621" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20240111 02:56:16.609" endtime="20240111 02:56:18.621"/>
+<msg timestamp="20240116 01:07:32.075" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240116 01:07:30.060" endtime="20240116 01:07:32.075"/>
 </kw>
-<status status="PASS" starttime="20240111 02:56:09.377" endtime="20240111 02:56:18.621"/>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240116 01:07:32.075" endtime="20240116 01:07:34.286"/>
+</kw>
+<status status="PASS" starttime="20240116 01:07:23.284" endtime="20240116 01:07:34.286"/>
 </test>
-<status status="PASS" starttime="20240111 02:56:09.230" endtime="20240111 02:56:18.625"/>
+<status status="PASS" starttime="20240116 01:07:23.096" endtime="20240116 01:07:34.287"/>
 </suite>
 <statistics>
 <total>
@@ -48,7 +48,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Alert">Alert</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Draganddrop">Draganddrop</stat>
 </suite>
 </statistics>
 <errors>
